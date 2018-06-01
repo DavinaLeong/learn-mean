@@ -2,7 +2,7 @@
   "name": "learn-mean",
   "version": "1.0.0",
   "description": "Me learning MEAN stack.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app"
   },

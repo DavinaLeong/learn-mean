@@ -4,7 +4,7 @@
   "description": "Me learning MEAN stack.",
   "main": "index.js",
   "scripts": {
-    "test": "-"
+    "start": "node app"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,30 @@
+{
+  "name": "learn-mean",
+  "version": "1.0.0",
+  "description": "Learn Mean TaskList",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavinaLeong/learn-mean.git"
+  },
+  "keywords": [
+    "learn",
+    "mean",
+    "node",
+    "express",
+    "angular",
+    "angular2",
+    "mongodb",
+    "task",
+    "list"
+  ],
+  "author": "Davina Leong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavinaLeong/learn-mean/issues"
+  },
+  "homepage": "https://github.com/DavinaLeong/learn-mean#readme"
+}

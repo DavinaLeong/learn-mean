@@ -26,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/DavinaLeong/learn-mean/issues"
   },
-  "homepage": "https://github.com/DavinaLeong/learn-mean#readme"
+  "homepage": "https://github.com/DavinaLeong/learn-mean#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongojs": "^2.6.0"
+  }
 }

@@ -1,2 +1,5 @@
 # Learn MEAN
-This repo is me learning MEAN stack from [this article](https://www.sitepoint.com/mean-stack-angular-2-angular-cli/) on SitePoint.
+Here is me learing MEAN stack from this tutorial on YouTube:
+
+**MEAN App From Scratch - MongoDB, Express, Angular 2 & NodeJS**,
+https://www.youtube.com/watch?v=PFP0oXNNveg

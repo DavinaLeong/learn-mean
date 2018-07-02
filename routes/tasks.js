@@ -29,4 +29,43 @@ router.get('/task/:id', (req, res, next) => {
     });
 });
 
+/**
+ * Creates a new task in DB.
+ */
+router.post('/task', (req, res, next) => {
+    let task = req.body;
+    if(!task.title || (task.isDone + '')) {
+        res.status(400);
+        res.json({
+            "error": "Bad Data"
+        });
+    } else {
+        db.tasks.save(task, (err, task) => {
+            if(err) {
+                res.send(err);
+            }
+            res.json(tasks);
+        });
+    }
+});
+
+/**
+ * Updates an existing task in DB.
+ */
+router.put('/task/:id', () => {
+    
+});
+
+/**
+ * Deletes a single task by it's ID.
+ */
+router.delete('/task/:id', (req, res, next) => {
+    db.tasks.remove({_id: mongojs.ObjectId(req.params.id)}, (err, task) => {
+        if(err) {
+            res.send(err);
+        }
+        res.json(task);
+    });
+});
+
 module.exports = router;

@@ -1,8 +1,8 @@
 # Learn MEAN
 Here is me learing MEAN stack from this tutorial on YouTube:
 
-**MEAN App From Scratch - MongoDB, Express, Angular 2 & NodeJS**,
-https://www.youtube.com/watch?v=PFP0oXNNveg
+**Angular 6 CRUD Example | MEAN Stack Tutorial**,
+https://appdividend.com/2018/05/27/angular-6-crud-example-mean-stack-tutorial/
 
 ## Stopped At
-Timestamp: **29:05**
+*Have not started*

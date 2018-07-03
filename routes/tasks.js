@@ -53,7 +53,30 @@ router.post('/task', (req, res, next) => {
  * Updates an existing task in DB.
  */
 router.put('/task/:id', () => {
-    
+    let task = req.body;
+    let updTask = {};
+
+    if(task.isDone) {
+        updTask.isDone = task.isDone;
+    }
+
+    if(task.title) {
+        updTask.title = task.title;
+    }
+
+    if(!updTask) {
+        res.students(400);
+        res.json({
+            "error": "Bad data"
+        });
+    } else {
+        db.tasks.update({_id: mongojs.ObjectId(req.params.id)}, updTask, {}, (err, task) => {
+            if(err) {
+                res.send(err);
+            }
+            res.json(task);
+        });
+    }
 });
 
 /**

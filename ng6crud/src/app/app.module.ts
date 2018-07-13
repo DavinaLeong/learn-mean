@@ -10,6 +10,8 @@ import { CreateComponent } from './components/create/create.component';
 import { IndexComponent } from './components/index/index.component';
 import { EditComponent } from './components/edit/edit.component';
 
+import { AdunitService } from './adunit.service';
+
 const routes: Routes = [
   {path: 'create', component: CreateComponent},
   {path: 'edit/:id', component: EditComponent},
@@ -29,7 +31,9 @@ const routes: Routes = [
     SlimLoadingBarModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AdunitService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

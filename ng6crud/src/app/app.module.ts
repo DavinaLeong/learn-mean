@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CreateComponent } from './components/create/create.component';
@@ -25,7 +26,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    SlimLoadingBarModule
+    SlimLoadingBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

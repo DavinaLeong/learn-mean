@@ -4,11 +4,11 @@
   "description": "Learning MEAN stack from a tutorial",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "mongoose": "^5.2.3",
-    "nodemon": "^1.18.1"
+    "body-parser": "~1.18.3",
+    "cors": "~2.8.4",
+    "express": "~4.16.3",
+    "mongoose": "~5.2.3",
+    "nodemon": "^~.18.1"
   },
   "devDependencies": {},
   "scripts": {

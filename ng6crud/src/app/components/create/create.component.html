@@ -2,19 +2,32 @@
 
 <div class="card">
   <div class="card-body">
-    <form>
+    <form [formGroup]="createAdunitForm" novalidate>
       <div class="form-group">
         <label for="unit_name">Unit Name</label>
-        <input type="text" name="unit_name" id="unit_name" class="form-control">
+        <input type="text" name="unit_name" id="unit_name" class="form-control" formControlName="unit_name" #unit_name/>
+      </div>
+      <div *ngIf="createAdunitForm.controls['unit_name'].invalid && (createAdunitForm.controls['unit_name'].dirty || createAdunitForm.controls['unit_name'].touched)" class="alert alert-danger">
+          <div *ngIf="createAdunitForm.controls['unit_name'].errors.required">
+            Unit Name is required.
+          </div>
       </div>
 
       <div class="form-group">
         <label for="unit_price">Unit Price</label>
-        <input type="number" step="0.01" min="0" name="unit_price" id="unit_price" class="form-control">
+        <input type="number" step="0.01" min="0" name="unit_price" id="unit_price" class="form-control" formControlName="unit_price" #unit_price>
+      </div>
+      <div *ngIf="createAdunitForm.controls['unit_price'].invalid && (createAdunitForm.controls['unit_price'].dirty || createAdunitForm.controls['unit_price'].touched)" class="alert alert-danger">
+          <div *ngIf="createAdunitForm.controls['unit_name'].errors.required">
+            Unit Price is required.
+          </div>
       </div>
 
       <div class="form-group">
-        <button type="button" class="btn btn-primary">Create Unit</button>
+        <button
+          (click)="addAdunit(unit_name.value, unit_price.value)"
+          [disabled]="createAdunitForm.pristine || createAdunitForm.invalid"
+          type="button" class="btn btn-primary">Create Unit</button>
       </div>
     </form>
   </div>
